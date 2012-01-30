@@ -1,0 +1,21 @@
+<article>
+  <aside>
+    <span class="hora"><%= event.hour %></span>
+    <span class="preco">
+      <%= prices(event.price_masc, event.price_fem) %>
+    </span>
+  </aside>
+  <h3><%= event.band_name %></h3>
+  <h4><a href="<%= event.place.url %>" target="blank"><%= event.place.name %></a></h4>
+  <p class="endereco">
+    <%= event.place.address %>
+  </p>
+  <footer>
+    <a href="http://maps.google.com/maps?q=<%= Rack::Utils.escape(event.place.address) %>">Ver no mapa</a>
+    <aside class="vai-pra-la">
+      <% @url = "http://www.rockinsampa.com/eventos/#{event.id}" %>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-via="RockInSampa" data-text='Eu vou ver <%= event.band_name %> no <%= event.place.name %>. Venha também!' data-url="<%= @url %>">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+      <div class="fb-like" data-href="<%= @url %>" data-send="true" data-layout="button_count" data-show-faces="false" data-colorscheme="light" data-font="arial"></div>
+    </aside>
+  </footer>
+</article>

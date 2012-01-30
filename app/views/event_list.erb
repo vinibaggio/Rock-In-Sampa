@@ -1,0 +1,11 @@
+<ul>
+  <% if events.empty? -%>
+    <li><article>Não há Rock and Roll.</article></li>
+  <% else -%>
+    <% events.each do |event| %>
+      <li>
+        <%= erb :event, :locals => {:event => event}, :layout => false %>
+      </li>
+    <% end %>
+  <% end -%>
+</ul>

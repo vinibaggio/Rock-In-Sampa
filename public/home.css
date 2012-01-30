@@ -1,0 +1,168 @@
+html { min-height: 100%; }
+
+body {
+  width: 600px;
+  margin: auto;
+  color: #fff;
+
+  background: #1e1e1e;
+  background-image: url('/bg.png'); /* fallback */
+  background-image: url('/bg.png'), -webkit-gradient(linear, left top, left bottom, from(rgba(100, 100, 100, 0.2)), to(rgba(0, 0, 0, 0.5))); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.2), rgba(0, 0, 0, 0.5)), url('/bg.png'); /* Chrome 10+, Saf5.1+ */
+  background-image:    -moz-linear-gradient(top, rgba(100, 100, 100, 0.2), rgba(0, 0, 0, 0.5)), url('/bg.png'); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, rgba(100, 100, 100, 0.2), rgba(0, 0, 0, 0.5)), url('/bg.png'); /* IE10 */
+  background-image:      -o-linear-gradient(top, rgba(100, 100, 100, 0.2), rgba(0, 0, 0, 0.5)), url('/bg.png'); /* Opera 11.10+ */
+  background-image:         linear-gradient(top, rgba(100, 100, 100, 0.2), rgba(0, 0, 0, 0.5)), url('/bg.png'); /* W3C */
+}
+
+body > header {
+  height: 92px;
+  margin: 40px;
+}
+
+body > header h1 {
+  height: 92px;
+  width: 368px;
+  text-indent: -9999px;
+  margin: 0 auto;
+
+  background-image: url('/rock-in-sampa.png');
+}
+
+body > header p {
+  text-indent: -9999px;
+}
+
+a, a:visited, a:active { color: #e51f1f; }
+
+h2 {
+  font-family: Georgia, Times New Roman, serif;
+  font-weight: 400;
+}
+
+h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 2em;
+  letter-spacing: -0.05em;
+  display: inline;
+  height: 40px;
+}
+
+h4 { margin-top: 10px; }
+
+h4 a, h4 a:visited, h4 a:active {
+  color: #000;
+}
+
+p { margin: 0 0 15px; }
+
+ul, article {
+  list-style-type: none;
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+article, form, section > div {
+  background-color: rgba(255,255,255, 0.9);
+  padding: 20px;
+  margin-bottom: 15px;
+     -moz-box-shadow: 3px 3px 10px #000;
+  -webkit-box-shadow: 3px 3px 10px #000;
+          box-shadow: 3px 3px 10px #000;
+}
+
+footer nav { margin-bottom: 15px;}
+footer nav li {
+  display: inline;
+  margin: 0 3px;
+}
+
+footer nav a, footer nav a:visited, footer nav a:active {
+  color: #ccc;
+}
+
+/* Home */
+
+aside {
+  float: right;
+  font-size: 1.7em;
+  height: 40px;
+}
+
+#preco_masc, #preco_fem {
+  padding-left: 3px;
+  padding-right: 10px;
+}
+
+aside span {
+  line-height: 40px;
+}
+
+article > footer {
+  display: inline;
+}
+
+body > footer {
+  font-size: 0.7em;
+  text-align: center;
+  color: #555;
+}
+
+.hora {
+  padding-right: 20px;
+}
+
+footer > aside {
+  float: right;
+  font-size: 12px;
+}
+
+.fb-like {
+  top: -3px;
+}
+
+/* Contato */
+
+form { color: #000; }
+form li { margin-bottom: 10px; }
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  width: 60%;
+}
+
+#mensagem { display: none; }
+
+form textarea {
+  height: 100px;
+}
+
+input[type=submit] {
+  width: 80px;
+  padding: 5px;
+}
+
+.error {
+  border: 2px solid #e51f1f;
+  color: #e51f1f;
+  background-color: #fcc7c7;
+  padding: 5px;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/* Contato Sucesso, 404, 500 */
+div p {
+  margin: 0;
+  color: #000;
+}

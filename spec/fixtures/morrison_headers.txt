@@ -1,0 +1,10 @@
+Date: Mon, 03 Oct 2011 01:10:10 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Location: /hotsite/
+Content-Length: 130
+Content-Type: text/html
+Set-Cookie: ASPSESSIONIDSSRBAQQS=DDGNPAPDEPCJEAEFDEHBENGC; path=/
+Cache-control: private
+
+

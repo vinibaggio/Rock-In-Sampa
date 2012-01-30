@@ -1,0 +1,41 @@
+<header>
+  <h2>Contato</h2>
+</header>
+<form action="/contato" method="POST">
+  <% if @contact.delivery_attempted? %>
+    <div class="error">Por favor preencha todos os campos adequadamente.</div>
+  <% end %>
+
+  <p>Todos os campos são necessários.</p>
+  <ul>
+    <li>
+      <label for="contact_name">Seu nome</label>
+      <input type="text" name="contact[name]" id="contact_name" value="<%= @contact.name %>" />
+    </li>
+
+    <li>
+      <label for="contact_email">Seu e-mail</label>
+      <input type="email" name="contact[email]" id="contact_email" value="<%= @contact.email %>" />
+    </li>
+
+    <li>
+      <label for="contact_title">Título:</label>
+      <input type="text" name="contact[title]" id="contact_title" value="<%= @contact.title %>" />
+    </li>
+
+    <li id="mensagem">
+      <label for="contact_message">Mensagem</label>
+      <textarea name="contact[message]" id="contact_message"><%= @contact.message %></textarea>
+    </li>
+
+    <li id="mensagem2">
+      <label for="contact_honey_pot">Mensagem</label>
+      <textarea name="contact[honey_pot]" id="contact_honey_pot"><%= @contact.message %></textarea>
+    </li>
+
+    <li>
+      <input type="hidden" name="authenticity_token" value="<%= session[:csrf] %>" />
+      <input type="submit" value="Enviar" />
+    </li>
+  </ul>
+</form>

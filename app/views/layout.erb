@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title><%= @title || "Rock in Sampa &mdash; Descubra o melhor Rock and Roll de São Paulo"%></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="rock, rock and roll, são paulo, bares, shows, música, agenda"/>
+    <meta name="description" content="O Rock in Sampa é o jeito mais fácil para descobrir o que está rolando nos bares de Rock mais tradicionais da noite paulistana."/>
+    <meta property="og:image" content="http://www.rockinsampa.com/fb-image.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/RockInSampa">
+
+    <link rel="stylesheet" href="/normalize.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="/home.css" type="text/css" media="screen"/>
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="/ie.css" type="text/css" media="screen"/>
+    <![endif]-->
+    <% if App.production? -%>
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-26186762-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+           var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+      </script>
+    <% end -%>
+    <script type="text/javascript" src="/modernizr.js"></script>
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1&appId=139815892785849";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+      <a href="/">
+        <h1>RockinSampa</h1>
+        <p>Descubra o melhor Rock and Roll de São Paulo</p>
+      </a>
+    </header>
+    <section>
+      <%= yield %>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contato">Contato</a></li>
+          <li><a href="/feed">RSS</a></li>
+          <li><a href="http://www.twitter.com/RockInSampa">Siga-nos no Twitter: @RockInSampa</a></li>
+        </ul>
+      </nav>
+      Rock In Sampa 2011 &copy; &mdash; Todos os direitos reservados.
+    </footer>
+  </body>
+</html>

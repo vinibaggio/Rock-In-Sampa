@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'irb'
+require 'bundler'
+Bundler.require
+
+$: << File.expand_path(File.dirname(__FILE__) + "/../")
+
+require 'config/boot'
+
+IRB.start

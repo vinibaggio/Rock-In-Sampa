@@ -1,0 +1,4 @@
+/* force fallback */
+
+body { background-image: url('/bg.png'); }
+article, form, div { background-color: #eee; }

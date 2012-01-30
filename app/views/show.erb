@@ -1,0 +1,4 @@
+<header>
+  <h2>Evento do dia <%= l Date.today, :full %></h2>
+</header>
+<%= erb :event, :locals => {:event => @event}, :layout => false %>

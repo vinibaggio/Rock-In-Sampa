@@ -1,0 +1,16 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Everything: Vinicius Baggio Fuentes
+  Site: www.vinibaggio.net
+  Twitter: @vinibaggio
+  Location: São Paulo
+
+/* THANKS */
+  Names: Bruna Tiemi Kochi (www.brutiko.com), Rogério Carvalho, Mariana Ozaki, Ricardo Verhaeg
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr
+  Software: Ruby, Sinatra and a nice Gemfile

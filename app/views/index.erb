@@ -1,0 +1,9 @@
+<header>
+  <h2>Hoje &mdash; <%= l Date.today, :full %></h2>
+</header>
+<%= erb :event_list, :locals => {:events => @today_events}, :layout => false %>
+
+<header>
+  <h2>Amanhã &mdash; <%= l DateGenerator.tomorrow.to_date, :full %></h2>
+</header>
+<%= erb :event_list, :locals => {:events => @tomorrow_events}, :layout => false %>
