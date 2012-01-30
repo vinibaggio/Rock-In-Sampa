@@ -1,0 +1,19 @@
+development:
+  db_user: root
+  db_pass:
+  db_name: 'rockinsampa_development'
+  email_to: 'john@example.com'
+  url_aprovar: http://localhost:9393/aprovar
+  url_reprovar: http://localhost:9393/reprovar
+  email_smtp_server: 'localhost'
+  email_smtp_port: 1025
+  email_smtp_domain: 'rockinsampa.com'
+  email_smtp_username: 'bla'
+  email_smtp_password: 'bla'
+test:
+  db_user: root
+  db_pass:
+  db_name: 'rockinsampa_test'
+  email_to: 'john@example.com'
+  url_aprovar: http://teste.local/aprovar
+  url_reprovar: http://teste.local/reprovar
